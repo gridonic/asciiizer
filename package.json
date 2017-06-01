@@ -11,6 +11,7 @@
     "test": "npm run build -- > /dev/null && echo ✔︎  OK"
   },
   "dependencies": {
+    "figlet": "^1.2.0",
     "vue": "^2.3.3"
   },
   "devDependencies": {

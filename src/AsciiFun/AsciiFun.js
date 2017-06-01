@@ -1,4 +1,5 @@
 import Vue from 'vue';
+import figlet from 'figlet';
 
 export default Vue.extend({
     name: 'AsciiFun',
@@ -10,7 +11,14 @@ export default Vue.extend({
     },
     methods: {
         asciize: function() {
-            this.asciiArt = `${this.term} asciized…`;
+            figlet(this.term, (err, data) => {
+                if (err) {
+                    console.error(err);
+                    this.asciiArt = 'Error…';
+                }
+
+                this.asciiArt = data;
+            });
         },
         reset: function() {
             this.term = null;
