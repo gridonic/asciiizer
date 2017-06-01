@@ -32,5 +32,10 @@ export default Vue.extend({
             this.term = null;
             this.asciiArt = null;
         }
+    },
+    watch: {
+        selectedFont: function () {
+            this.asciize();
+        }
     }
 });
