@@ -1,5 +1,5 @@
 <div>
-    <input v-model="term" placeholder="Start typing…"/>
+    <textarea v-model="term" placeholder="Start typing…"></textarea>
     <select v-model="selectedFont">
         <option v-for="font in fonts" v-bind:value="font">
             {{ font }}
