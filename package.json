@@ -16,6 +16,8 @@
   "dependencies": {
     "faker": "^4.1.0",
     "figlet": "^1.2.0",
+    "flexboxgrid-sass": "^8.0.5",
+    "include-media": "^1.4.9",
     "serve": "^5.2.0",
     "vue": "^2.3.3"
   },

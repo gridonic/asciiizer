@@ -1,8 +1,4 @@
-.header {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem 0;
-}
+@import "../sass/meta";
 
 h1 {
     color: #fff;
@@ -11,10 +7,11 @@ h1 {
 }
 
 .user-input {
-    background: transparent;
     width: 100%;
     min-height: 4rem;
+    margin-top: 1rem;
     color: #fff;
+    background: transparent;
     border: 3px solid rgba(255, 255, 255, 0.5);
     font-size: 1rem;
 
@@ -23,19 +20,20 @@ h1 {
     }
 }
 
-.actions {
-    text-align: right;
-}
-
 .button {
     padding: 1rem 2rem;
     border: none;
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #314755;
     text-transform: uppercase;
     font-variant-caps: all-small-caps;
     font-weight: 700;
 }
 
-.font-selection {
+.actions {
+    white-space: nowrap;
+
+    @include media(">=sm") {
+        text-align: right;
+    }
 }

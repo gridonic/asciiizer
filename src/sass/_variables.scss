@@ -1,0 +1,11 @@
+$flexboxgrid-grid-columns: 12;
+$flexboxgrid-gutter-width: 1rem;
+$flexboxgrid-outer-margin: 1rem;
+$flexboxgrid-breakpoints:
+    sm 48rem,
+    md 64rem,
+    lg 80rem,
+    xlg 90rem;
+$breakpoints: (sm: 48rem, md: 64rem, lg: 80, zlg: 90rem);
+
+$font-family: "Helvetica Neue", Helvetica, sans-serif;

@@ -1,16 +1,21 @@
 <div>
-    <div class="header">
-    <h1>Asciiize 3000™</h1>
-        <div class="actions">
-            <select v-model="selectedFont">
-                <option v-for="font in fonts" v-bind:value="font">
-                    {{ font }}
-                </option>
-            </select>
-            <button class="button" v-on:click="random">Surprise Me</button>
-            <button class="button" v-on:click="reset">Reset!</button>
+    <div class="row between-sm">
+        <div class="col-xs-12 col-sm">
+            <h1>Asciiize 3000™</h1>
+        </div>
+        <div class="col-xs-12 col-sm">
+            <div class="actions">
+                <select v-model="selectedFont">
+                    <option v-for="font in fonts" v-bind:value="font">
+                        {{ font }}
+                    </option>
+                </select>
+                <button class="button" v-on:click="random">Surprise Me</button>
+                <button class="button" v-on:click="reset">Reset!</button>
+            </div>
         </div>
     </div>
+
     <textarea class="user-input" v-model="term" placeholder="Start typing…"></textarea>
     <pre v-if="asciiArt">{{ asciiArt }}</pre>
 </div>
