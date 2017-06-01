@@ -1,14 +1,4 @@
-<p align="center"><img src="https://gridonic.github.io/assets/images/logos/vue-webpack.svg" height="128"></p>
-
-# ES6+ and Vue.js and webpack
-
-This setup uses [webpack] as the module bundler, [Babel] for transpiling and comes with [Vue.js] as the underlying framework which brings…
-
-- [Asynchronous] loading of components
-- [Code-splitting] to serve only needed files
-- Encapsulation of styles aka [scoped css]
-
-Have fun! ✌️
+# Asciiizer 3000™
 
 ## Build setup
 

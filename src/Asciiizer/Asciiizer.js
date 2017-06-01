@@ -7,7 +7,7 @@ import FontService from './FontService';
 const fontService = new FontService();
 
 export default Vue.extend({
-    name: 'AsciiFun',
+    name: 'Asciiizer',
     data() {
         return {
             term: null,

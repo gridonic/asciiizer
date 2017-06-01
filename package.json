@@ -1,7 +1,7 @@
 {
-  "name": "@gridonic/ascii-fun",
+  "name": "@gridonic/asciiizer",
   "version": "1.0.0",
-  "description": "ES6+ and Vue.js and webpack",
+  "description": "Generate ASCII art",
   "author": "Gridonic <hello@gridonic.ch>",
   "license": "MIT",
   "scripts": {
@@ -40,6 +40,6 @@
   },
   "private": true,
   "engines": {
-    "node": "^6.0.0"
+    "node": "^6"
   }
 }
