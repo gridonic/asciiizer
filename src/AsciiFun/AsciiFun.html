@@ -1,0 +1,7 @@
+<div>
+    <input v-model="term"/>
+    <p>{{ term }}</p>
+    <button v-on:click="asciize">Convert!</button>
+    <button v-on:click="reset">Reset!</button>
+    <div v-if="asciiArt">{{ asciiArt }}</div>
+</div>
