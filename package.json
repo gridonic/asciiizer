@@ -16,8 +16,9 @@
   "dependencies": {
     "faker": "^4.1.0",
     "figlet": "^1.2.0",
-    "flexboxgrid-sass": "^8.0.5",
+    "flexboxgrid-sass": "https://github.com/gridonic/flexboxgrid-sass/tarball/namespaced-breakpoints-variable",
     "include-media": "^1.4.9",
+    "sass-svg-uri": "^1.0.0",
     "serve": "^5.2.0",
     "vue": "^2.3.3"
   },

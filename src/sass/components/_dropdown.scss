@@ -1,0 +1,41 @@
+@import "../meta";
+
+.dropdown {
+    $dropdown-base-color: #fff;
+
+    @include font-smoothing;
+    @include x-appearance(none);
+
+    background-color: transparent;
+    background-image: svg-uri('<svg width="16" height="9" viewBox="0 0 16 9" xmlns="http://www.w3.org/2000/svg"><path d="M8 6.586L1.707.293A1 1 0 1 0 .293 1.707l7 7a.997.997 0 0 0 1.414 0l7-7A1 1 0 1 0 14.293.293L8 6.586z" fill="#{$dropdown-base-color}"/></svg>');
+    background-position: center right 10px;
+    background-repeat: no-repeat;
+    border-radius: 0;
+    border: 1px solid currentColor;
+    color: $dropdown-base-color;
+    cursor: pointer;
+    font-family: inherit;
+    line-height: inherit;
+    padding: 1rem 34px 1rem 20px;
+    text-transform: uppercase;
+
+    &::-ms-expand {
+        display: none;
+    }
+
+    &:not(:disabled) {
+        &:hover {
+            border-color: $dropdown-base-color;
+        }
+
+        &:active {
+            background-image: svg-uri('<svg width="16" height="9" viewBox="0 0 16 9" xmlns="http://www.w3.org/2000/svg"><path d="M15 8L8 1M1 8l7-7" stroke="#000" stroke-width="2" fill="none" stroke-linecap="round"/></svg>');
+            border-color: $dropdown-base-color;
+        }
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+        opacity: 0.25;
+    }
+}

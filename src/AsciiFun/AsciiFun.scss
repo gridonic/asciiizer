@@ -1,9 +1,14 @@
 @import "../sass/meta";
+@import "../sass/components/dropdown";
 
 h1 {
     color: #fff;
     font-weight: 700;
     margin: 0;
+}
+
+.ascii {
+    margin-top: 2rem;
 }
 
 .user-input {
@@ -12,22 +17,23 @@ h1 {
     margin-top: 1rem;
     color: #fff;
     background: transparent;
-    border: 3px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 1rem;
     font-size: 1rem;
+    font-family: inherit;
 
     &::placeholder {
-        color: #fff;
+        color: rgba(255, 255, 255, 0.5);
+        font-family: inherit;
     }
 }
 
 .button {
     padding: 1rem 2rem;
-    border: none;
-    background-color: #fff;
-    color: #314755;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
     text-transform: uppercase;
-    font-variant-caps: all-small-caps;
-    font-weight: 700;
 }
 
 .actions {

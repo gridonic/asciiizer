@@ -1,11 +1,11 @@
-<div>
+<div class="ascii">
     <div class="row between-sm">
         <div class="col-xs-12 col-sm">
             <h1>Asciiize 3000™</h1>
         </div>
         <div class="col-xs-12 col-sm">
             <div class="actions">
-                <select v-model="selectedFont">
+                <select v-model="selectedFont" class="dropdown">
                     <option v-for="font in fonts" v-bind:value="font">
                         {{ font }}
                     </option>
@@ -16,6 +16,6 @@
         </div>
     </div>
 
-    <textarea class="user-input" v-model="term" placeholder="Start typing…"></textarea>
+    <textarea class="user-input" v-model="term" placeholder="Start typing…" rows="5"></textarea>
     <pre v-if="asciiArt">{{ asciiArt }}</pre>
 </div>

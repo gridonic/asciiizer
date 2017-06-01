@@ -1,3 +1,49 @@
-@import '../../node_modules/flexboxgrid-sass/flexboxgrid';
-@import '../../node_modules/include-media/dist/_include-media';
+@import '~flexboxgrid-sass/flexboxgrid';
+@import '~include-media/dist/_include-media';
+
+// @see https://github.com/waldemarfm/sass-svg-uri
+@import "~sass-svg-uri/svg-uri";
+
 @import "variables";
+
+@mixin font-smoothing($on: true) {
+    @if $on {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    @else {
+        -webkit-font-smoothing: subpixel-antialiased;
+        -moz-osx-font-smoothing: auto;
+    }
+}
+
+///
+/// Generates appearance for a given element.
+///
+/// @author romamatusevich
+///
+/// @link http://caniuse.com/#feat=css-appearance caniuse
+/// @link http://www.w3.org/TR/2004/CR-css3-ui-20040511/#appearance spec
+/// @link https://developer.mozilla.org/en-US/docs/Web/CSS/-moz-appearance MDN
+/// @link http://css-tricks.com/almanac/properties/a/appearance css-tricks
+///
+/// @param {String} $value
+///
+/// @output
+/// ```css
+///   -webkit-appearance: <value>;
+///      -moz-appearance: <value>;
+///           appearance: <value>;
+/// ```
+///
+/// @example
+///   .selector {
+///     @include x-appearance(button);
+///   }
+///
+@mixin x-appearance ($value) {
+    -webkit-appearance: $value;
+    -moz-appearance: $value;
+    appearance: $value;
+}
