@@ -18,6 +18,10 @@ export default Vue.extend({
     },
     methods: {
         asciize: function() {
+            if (!this.term) {
+                return;
+            }
+
             figlet(this.term, {
                 font: this.selectedFont
             }, (err, data) => {

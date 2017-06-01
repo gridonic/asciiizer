@@ -1,17 +1,17 @@
 <div class="ascii">
-    <div class="row between-sm">
+    <div class="row between-sm middle-xs">
         <div class="col-xs-12 col-sm">
             <h1>Asciiize 3000™</h1>
         </div>
         <div class="col-xs-12 col-sm">
             <div class="actions">
-                <select v-model="selectedFont" class="dropdown">
+                <select v-model="selectedFont" class="action dropdown">
                     <option v-for="font in fonts" v-bind:value="font">
                         {{ font }}
                     </option>
                 </select>
-                <button class="button" v-on:click="random">Surprise Me</button>
-                <button class="button" v-on:click="reset">Reset!</button>
+                <button class="action button" v-on:click="random">Surprise Me</button>
+                <button class="action button" v-on:click="reset">Reset!</button>
             </div>
         </div>
     </div>

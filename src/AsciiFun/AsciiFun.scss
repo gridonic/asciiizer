@@ -37,7 +37,12 @@ h1 {
 }
 
 .actions {
+    display: flex;
     white-space: nowrap;
+
+    > .action:not(:first-child) {
+        margin-left: 1em;
+    }
 
     @include media(">=sm") {
         text-align: right;
