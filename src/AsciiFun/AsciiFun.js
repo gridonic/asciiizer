@@ -1,7 +1,10 @@
 import Vue from 'vue';
 import figlet from 'figlet';
+import faker from 'faker/locale/en'
 
 import fontFilenames from './fonts.json';
+
+console.log(faker);
 
 const fonts = fontFilenames.map(x => x.slice(0, x.length - 4));
 
@@ -12,7 +15,7 @@ export default Vue.extend({
             term: 'Start Typing',
             asciiArt: null,
             fonts,
-            selectedFont: fonts[Math.floor(Math.random() * fonts.length)]
+            selectedFont: this.randomFont()
         }
     },
     methods: {
@@ -28,9 +31,16 @@ export default Vue.extend({
                 this.asciiArt = data;
             });
         },
+        random: function() {
+            this.selectedFont = this.randomFont();
+            this.term = faker.random.words(2);
+        },
         reset: function() {
             this.term = null;
             this.asciiArt = null;
+        },
+        randomFont: function () {
+            return fonts[Math.floor(Math.random() * fonts.length)];
         }
     },
     watch: {

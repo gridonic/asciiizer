@@ -11,6 +11,7 @@
     "test": "npm run build -- > /dev/null && echo ✔︎  OK"
   },
   "dependencies": {
+    "faker": "^4.1.0",
     "figlet": "^1.2.0",
     "fs-extra": "^3.0.1",
     "glob": "^7.1.2",
