@@ -7,6 +7,6 @@
 
 body {
     font-family: $font-family;
-    background: linear-gradient(to right, #26a0da, #314755);
-    color: #fff;
+    background: linear-gradient(to right, $color-background, $color-background-variant);
+    color: $color-foreground;
 }
