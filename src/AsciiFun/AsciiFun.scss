@@ -1,10 +1,15 @@
 @import "../sass/meta";
 @import "../sass/components/dropdown";
 
-h1 {
+.title {
     color: #fff;
     font-weight: 700;
-    margin: 0;
+    margin: 1rem 0;
+    text-align: center;
+
+    @include media(">=sm") {
+        text-align: left;
+    }
 }
 
 .ascii {
@@ -38,13 +43,29 @@ h1 {
 
 .actions {
     display: flex;
-    white-space: nowrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    @include media(">=sm") {
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+    }
+
+    > .action {
+        margin-bottom: 0.5em;
+
+        @include media(">=sm") {
+            margin-bottom: 0;
+        }
+    }
 
     > .action:not(:first-child) {
         margin-left: 1em;
     }
+}
 
-    @include media(">=sm") {
-        text-align: right;
-    }
+.refresh {
+    cursor: pointer; 
 }

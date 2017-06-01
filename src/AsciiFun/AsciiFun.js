@@ -33,6 +33,9 @@ export default Vue.extend({
                 this.asciiArt = data;
             });
         },
+        randomFont: function() {
+            this.selectedFont = fontService.randomFont();
+        },
         random: function() {
             this.selectedFont = fontService.randomFont();
             this.term = faker.random.words(2);
