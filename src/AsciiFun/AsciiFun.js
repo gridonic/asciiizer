@@ -2,20 +2,18 @@ import Vue from 'vue';
 import figlet from 'figlet';
 import faker from 'faker/locale/en'
 
-import fontFilenames from './fonts.json';
+import FontService from './FontService';
 
-console.log(faker);
-
-const fonts = fontFilenames.map(x => x.slice(0, x.length - 4));
+const fontService = new FontService();
 
 export default Vue.extend({
     name: 'AsciiFun',
     data() {
         return {
-            term: 'Start Typing',
+            term: null,
             asciiArt: null,
-            fonts,
-            selectedFont: this.randomFont()
+            fonts: fontService.getAllFonts(),
+            selectedFont: fontService.randomFont()
         }
     },
     methods: {
@@ -32,18 +30,18 @@ export default Vue.extend({
             });
         },
         random: function() {
-            this.selectedFont = this.randomFont();
+            this.selectedFont = fontService.randomFont();
             this.term = faker.random.words(2);
         },
         reset: function() {
             this.term = null;
             this.asciiArt = null;
-        },
-        randomFont: function () {
-            return fonts[Math.floor(Math.random() * fonts.length)];
         }
     },
     watch: {
+        term: function () {
+            this.asciize();
+        },
         selectedFont: function () {
             this.asciize();
         }
