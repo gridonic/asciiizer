@@ -19,14 +19,12 @@
     "include-media": "^1.4.9",
     "sass-svg-uri": "^1.0.0",
     "serve": "^5.2.0",
-    "vue": "^2.3.3"
-  },
-  "devDependencies": {
+    "vue": "^2.3.3",
+    "cross-env": "^5.0.0",
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
     "babel-preset-env": "^1.5.1",
     "babili-webpack-plugin": "^0.1.1",
-    "cross-env": "^5.0.0",
     "css-loader": "^0.28.4",
     "file-loader": "^0.11.1",
     "node-sass": "^4.5.3",
