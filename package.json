@@ -1,5 +1,5 @@
 {
-  "name": "@gridonic/js",
+  "name": "@gridonic/ascii-fun",
   "version": "1.0.0",
   "description": "ES6+ and Vue.js and webpack",
   "author": "Gridonic <hello@gridonic.ch>",
@@ -30,7 +30,6 @@
     "file-loader": "^0.11.1",
     "node-sass": "^4.5.3",
     "sass-loader": "^6.0.5",
-    "uglify-js": "git://github.com/paulovieira/UglifyJS2#harmony",
     "url-loader": "^0.5.7",
     "vue-loader": "^12.2.1",
     "vue-template-compiler": "^2.3.3",
