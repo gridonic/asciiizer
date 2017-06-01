@@ -1,1 +1,13 @@
 // @see https://github.com/gridonic/sass for setting up application wide styles.
+
+$font-family: "Helvetica Neue", Helvetica, sans-serif;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-family;
+    background: linear-gradient(to right, #904e95, #e96443);
+    color: #fff;
+}
