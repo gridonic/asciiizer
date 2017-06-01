@@ -1,0 +1,54 @@
+.container {
+    border: 2px solid currentColor;
+    color: #41b883;
+    font-family: sans-serif;
+    left: 50%;
+    margin: 1em;
+    padding: 3em;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.technologies {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: currentColor;
+    height: 128px;
+    width: 128px;
+
+    + .logo {
+        position: relative;
+        margin-left: 3em;
+
+        &::before {
+            content: "\2b";
+            font-size: 2em;
+            position: absolute;
+            right: 100%;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 1.5em;
+        }
+    }
+}
+
+.vue {
+    background-image: url("../App.vue/images/logos/vue.svg");
+}
+
+.webpack {
+    background-image: url("../App.vue/images/logos/webpack.svg");
+}
+
+.title {
+    margin-bottom: 0;
+}

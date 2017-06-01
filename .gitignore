@@ -1,0 +1,13 @@
+/node_modules
+/build
+
+# IDE resources
+# https://intellij-support.jetbrains.com/hc/en-us/articles/206544839-How-to-manage-projects-under-Version-Control-Systems
+/.idea/dataSources.ids
+/.idea/datasources.xml
+/.idea/dictionaries
+/.idea/workspace.xml
+/.idea/tasks.xml
+/.idea/*.local.xml
+/.idea/shelf
+/.idea/.name
