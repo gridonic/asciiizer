@@ -2,7 +2,7 @@
 
 # Asciiizer 3000™
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+Converts input to ASCII-art text. Very fonts, such surprise, so amaze, wow! 
 
 ## Build setup
 
@@ -22,6 +22,12 @@ npm run watch
 # tests if the javascript files would build without errors
 npm run test
 ```
+
+## Deployment
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+## Further Reading
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
