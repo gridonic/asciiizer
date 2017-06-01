@@ -1,3 +1,5 @@
+<p align="center"><img src="https://github.com/gridonic/asciiizer/blob/master/misc/logo/ASCIIIZER-circle.png" alt="Asciiizer 3000™" width="112"></p>
+
 # Asciiizer 3000™
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
