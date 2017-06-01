@@ -1,0 +1,7 @@
+{
+  "name": "@gridonic/asciiizer",
+  "description": "A sample Vue.js app that generate ASCII art.",
+  "repository": "https://github.com/gridonic/asciiizer",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "keywords": ["node", "vue.js"]
+}

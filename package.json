@@ -1,7 +1,7 @@
 {
   "name": "@gridonic/asciiizer",
   "version": "1.0.0",
-  "description": "Generate ASCII art",
+  "description": "A sample Vue.js app that generate ASCII art.",
   "author": "Gridonic <hello@gridonic.ch>",
   "license": "MIT",
   "scripts": {
