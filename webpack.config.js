@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const BabiliPlugin = require('babili-webpack-plugin');
 
 const outputPath = path.resolve(__dirname, './build');
 const publicPath = '/build/';
@@ -75,12 +76,16 @@ if (process.env.NODE_ENV === 'production') {
                 NODE_ENV: '"production"'
             }
         }),
-        new webpack.optimize.UglifyJsPlugin({
-            sourceMap: true,
-            compress: {
-                warnings: false
-            }
-        }),
+        // Since UglifyJsPlugin does not work for ES6 code for now
+        // @see https://github.com/webpack-contrib/babili-webpack-plugin
+        // @see https://github.com/webpack/webpack/issues/2545
+        new BabiliPlugin(),
+        // new webpack.optimize.UglifyJsPlugin({
+        //     sourceMap: true,
+        //     compress: {
+        //         warnings: false
+        //     }
+        // }),
         new webpack.LoaderOptionsPlugin({
             minimize: true
         })
