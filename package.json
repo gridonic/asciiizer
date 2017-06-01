@@ -12,6 +12,8 @@
   },
   "dependencies": {
     "figlet": "^1.2.0",
+    "fs-extra": "^3.0.1",
+    "glob": "^7.1.2",
     "vue": "^2.3.3"
   },
   "devDependencies": {

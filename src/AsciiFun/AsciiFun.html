@@ -1,5 +1,10 @@
 <div>
     <input v-model="term"/>
+    <select v-model="selectedFont">
+        <option v-for="font in fonts" v-bind:value="font">
+            {{ font }}
+        </option>
+    </select>
     <p>{{ term }}</p>
     <button v-on:click="asciize">Convert!</button>
     <button v-on:click="reset">Reset!</button>
