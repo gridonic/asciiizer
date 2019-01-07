@@ -1,16 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="342px" height="342px" viewBox="0 0 342 342" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
-    <title>ASCIIIZER-circle</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="ASCIIIZER-v3" transform="translate(-48.000000, -48.000000)">
-            <circle id="backdrop" fill="#171717" cx="219" cy="219" r="171"></circle>
-            <g id="bolt" transform="translate(143.000000, 100.000000)" fill-rule="nonzero">
-                <polygon id="Shape" fill="#FF6D00" points="75.7927922 0 75.7927922 133.60697 151.702519 133.60697"></polygon>
-                <polygon id="Shape" fill="#FF6D44" points="0.587491879 86.6683772 76.4972189 238.971953 76.4972189 86.6683772"></polygon>
-            </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 342 342" width="342" height="342">
+    <g fill="none" fill-rule="evenodd" transform="translate(-48 -48)">
+        <circle cx="219" cy="219" r="171" fill="#171717"/>
+        <g fill-rule="nonzero">
+            <path fill="#FF6D00" d="M218.793 100v133.607h75.91z"/>
+            <path fill="#FF6D44" d="M143.587 186.668l75.91 152.304V186.668z"/>
         </g>
     </g>
 </svg>

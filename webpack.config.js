@@ -12,7 +12,7 @@ module.exports = {
         publicPath,
         filename: 'app.js'
     },
-    devtool: (process.env.NODE_ENV === 'production') ? '#source-map' : '#eval-source-map',
+    devtool: (process.env.NODE_ENV === 'production') ? '#cheap-source-map' : '#eval-source-map',
     module: {
         rules: [
             {
